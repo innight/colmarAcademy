@@ -1,0 +1,302 @@
+/* Universal Styles */
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Roboto", sans-serif;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {}
+
+h2 {}
+
+p {}
+
+
+/* Header */
+
+header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .5rem 3.75rem;
+    background-color: #ff8000;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+    flex-grow: 1;
+    color: #ffb78c;
+}
+
+header .logo-small {
+    display: none;
+}
+
+header .logo-small,
+header .logo-big {
+    flex-grow: 1;
+    padding-left: 1.5rem;
+}
+
+nav li {
+    display: inline;
+    padding-right: 1rem;
+}
+
+nav li:last-child {
+    padding-right: 0;
+}
+
+/* Learn Something New BANNER*/
+
+.banner {
+    width: 100%;
+    min-height: 50vh;
+    margin: auto;
+    color: #4a4a4a;
+    background: hsl(0, 0%, 80%);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+#banner .banner-image {
+    width: 50vh;
+    padding: 2rem 0;
+}
+
+#banner .banner-content {
+    width: 60%;
+    padding: 2.5rem 0;
+}
+
+.banner .cover {
+    margin: 32px 24px;
+}
+
+.banner .introduction {
+    flex: 1;
+}
+
+.banner .banner-text {
+    padding: 2.5rem 0;
+    line-height: 1.25;
+}
+
+.banner .banner-text h1 {
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.banner .banner-text p {
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.cta {
+    padding: 50px 0 0 0;
+}
+
+.cta .button {
+    padding: 1rem 5rem;
+    border-radius: 2px;
+    background-color: #4a4a4a;
+    color: white;
+}
+
+/* MAIN*/
+
+.main h1 {
+    line-height: 0.85;
+    font-size: 45px;
+    font-weight: 800;
+    margin-top: 32px;
+}
+
+.main p {
+    margin-top: 24px;
+    padding: 0;
+    font-size: 24px;
+}
+
+.main footer {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+/*Dados dos flex // Aside*/
+
+.color {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5.25rem;
+}
+
+.main .introduction {
+    margin-bottom: .75rem;
+    color: #4a4a4a;
+    text-align: left;
+    font-family: 'Playfair Display', Georgia, serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+
+}
+
+.main .aside {
+    width: 60%;
+
+}
+
+.aside .item {
+    display: flex;
+    flex-grow: 1;
+    height: 15.6875rem;
+    margin-bottom: 1.25rem;
+    border: rgba(0, 0, 0, 0.15) solid 1px;
+}
+
+.main .aside .item:last-child {
+    background: hsl(0, 0%, 80%);
+}
+
+.aside .item .image-container {
+    margin-top: 16px;
+    margin-left: 16px;
+    width: 35%;
+}
+
+.info-container {
+    display: inline-block;
+    text-align: left;
+    padding: 40px 0 0 40px;
+    width: 65%;
+}
+
+.info-container h1 {
+    padding: 0;
+    margin: 0 10px;
+    line-height: 1.5em;
+}
+
+.info-container p {
+    padding: 0;
+    margin: 0 10px;
+    line-height: 1.5em;
+}
+
+.info-container a {
+    padding: 0;
+    margin: 0 10px;
+    line-height: 2em;
+    color: #3279ed;
+}
+
+/*START LEARNING*/
+
+.start-learning {
+    background: hsl(0, 0%, 90%);
+    color: #292929;
+}
+
+.start-learning .title {
+    font-size: 53px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.card {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 2em;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-content {
+    padding: 1.4em;
+}
+
+.card-content p {
+    font-size: 80%;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+/* Flexbox stuff -- START LEARNING -- */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 1 33%;
+}
+
+/*THESIS-EXHIBIT*/
+
+.thesis-exhibit .main-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-area .content {
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.main-area  .aside {
+    width: 40%;
+}
+
+.main-area .aside  .item {
+    display: flex;
+    flex-grow: 1;
+    height: 15.6875rem;
+    margin-bottom: 1.25rem;
+    border: rgba(0, 0, 0, 0.15) solid 1px;
+}
