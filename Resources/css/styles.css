@@ -75,8 +75,6 @@ p {}
     display: flex;
     flex-grow: 1;
     align-content: space-between;
-
- 
 }
 
 .aside .item .image-container {
@@ -210,7 +208,7 @@ nav li:last-child {
 /* MAIN Section*/
 
 .aside .item a {
-   color: royalblue;
+    color: royalblue;
 }
 
 .main footer {
@@ -237,29 +235,36 @@ nav li:last-child {
 }
 
 .card-content {
-    padding: 1.4em;
+    height: 175px;
 }
 
 .card-content p {
-    font-size: 80%;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-bottom: 24px;
 }
 
-.card-content h2 {
-    margin-top: 0;
-    margin-bottom: .5em;
-    font-weight: bold;
+.card-content h1 {
+    padding-top: 16px;
+    margin-left: 16px;
+    font-size: 33px;
+    font-weight: 700;
+
 }
 
 /* Flexbox stuff -- START LEARNING -- */
 
 .cards {
+
+    margin: 0 72px 32px 72px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .card {
-    flex: 0 1 33%;
+    	flex: 0 1 calc(33% - 1em);
+
 }
 
 /*THESIS-EXHIBIT Section*/
